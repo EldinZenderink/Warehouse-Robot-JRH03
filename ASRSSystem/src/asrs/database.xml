@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><artikelregistratie>
+    <product id="1">
+        <name>blokje1</name>
+        <location>
+            <x>1</x>
+            <y>2</y>
+        </location>
+        <size>4</size>
+        <stock>-29</stock>
+    </product>
+
+    <product id="2">
+        <name>blokje2</name>
+        <location>
+            <x>3</x>
+            <y>5</y>
+        </location>
+        <size>3</size>
+        <stock>-10</stock>
+    </product>
+
+    <product id="3">
+        <name>blokje3</name>
+        <location>
+            <x>4</x>
+            <y>2</y>
+        </location>
+        <size>4</size>
+        <stock>-29</stock>
+    </product>
+
+    <product id="4">
+        <name>blokje4</name>
+        <location>
+            <x>4</x>
+            <y>3</y>
+        </location>
+        <size>4</size>
+        <stock>-29</stock>
+    </product>
+
+    <product id="5">
+        <name>blokje5</name>
+        <location>
+            <x>5</x>
+            <y>2</y>
+        </location>
+        <size>2</size>
+        <stock>-10</stock>
+    </product>
+
+    <product id="6">
+        <name>blokje6</name>
+        <location>
+            <x>3</x>
+            <y>4</y>
+        </location>
+        <size>4</size>
+        <stock>-29</stock>
+    </product>
+
+
+    <product id="7">
+        <name>blokje7</name>
+        <location>
+            <x>4</x>
+            <y>3</y>
+        </location>
+        <size>2</size>
+        <stock>49</stock>
+    </product>
+</artikelregistratie>

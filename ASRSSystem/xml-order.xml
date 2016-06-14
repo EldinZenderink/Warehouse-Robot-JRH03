@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?> <bestelling>
+    <ordernummer>1415</ordernummer>
+    <klant>
+        <voornaam>Piet</voornaam>
+        <achternaam>Jansen</achternaam>
+        <adres>Kalverstraat 17</adres>
+        <postcode>1012NX</postcode>
+        <plaats>Amsterdam</plaats>￼
+    </klant>
+    <datum>2014-03-28</datum>
+    <artikelnr>1</artikelnr>
+    <artikelnr>3</artikelnr>
+    <artikelnr>4</artikelnr>
+    <artikelnr>6</artikelnr>
+    <artikelnr>9</artikelnr>
+    <artikelnr>11</artikelnr>
+    <artikelnr>12</artikelnr>
+    <artikelnr>13</artikelnr>
+    <artikelnr>14</artikelnr>
+    <artikelnr>15</artikelnr>
+    <artikelnr>16</artikelnr>
+    <artikelnr>17</artikelnr>
+    <artikelnr>18</artikelnr>
+    <artikelnr>19</artikelnr>
+    <artikelnr>20</artikelnr>
+    <artikelnr>21</artikelnr>
+    <artikelnr>22</artikelnr>
+    <artikelnr>23</artikelnr>
+    <artikelnr>24</artikelnr>
+    <artikelnr>25</artikelnr>
+    <artikelnr>26</artikelnr>
+    <artikelnr>27</artikelnr>
+    <artikelnr>28</artikelnr>
+    <artikelnr>29</artikelnr>
+    <artikelnr>30</artikelnr>
+</bestelling>

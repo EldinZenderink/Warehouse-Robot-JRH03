@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="asrs.Controllers.MainController">
+   <children>
+      <HBox layoutX="631.0" layoutY="651.0" prefHeight="98.0" prefWidth="633.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="631.0" />
+      <AnchorPane layoutX="664.0" layoutY="14.0" minWidth="-Infinity" prefHeight="683.0" prefWidth="602.0" AnchorPane.bottomAnchor="23.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <BarChart fx:id="leftBar" layoutX="-20.0" layoutY="375.0" prefHeight="321.0" prefWidth="300.0" AnchorPane.bottomAnchor="-13.0" AnchorPane.leftAnchor="-20.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <BarChart fx:id="rightBar" layoutX="302.0" layoutY="377.0" prefHeight="321.0" prefWidth="300.0" AnchorPane.bottomAnchor="-13.0" AnchorPane.rightAnchor="0.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="RIGHT" />
+               </yAxis>
+            </BarChart>
+            <Label layoutX="431.0" layoutY="676.0" text="Bin 2" AnchorPane.rightAnchor="128.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="676.0" text="Bin 1 " AnchorPane.leftAnchor="106.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="mainLog" editable="false" layoutX="-2.0" layoutY="166.0" prefHeight="176.0" prefWidth="591.0" text="Log..." AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="166.0" />
+            <Label layoutY="14.0" text="Status:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCurrentState" layoutX="84.0" layoutY="14.0" prefHeight="28.0" prefWidth="140.0" text="Standby" textFill="#00c337" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <PointLight color="CHARTREUSE" layoutX="231.0" layoutY="689.0" lightOn="true" />
+            <HBox layoutX="260.0" layoutY="15.0" prefHeight="28.0" prefWidth="336.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onOpenOrderClick" prefHeight="42.0" prefWidth="294.0" text="Order openen...">
+                     <HBox.margin>
+                        <Insets right="14.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#generatePackingList" prefHeight="42.0" prefWidth="294.0" text="Pakbon(nen) genereren" />
+               </children>
+            </HBox>
+            <VBox layoutX="-50.0" layoutY="52.0" prefHeight="98.0" prefWidth="639.0">
+               <children>
+                  <fx:include fx:id="steps" source="Steps.fxml" />
+                  <HBox alignment="CENTER_LEFT" layoutX="632.0" layoutY="14.0" minWidth="-Infinity" prefHeight="48.0" prefWidth="443.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="600.0">
+                           <children>
+                              <Button mnemonicParsing="true" onAction="#onResetButton" prefHeight="42.0" prefWidth="140.0" text="RESET">
+                                 <HBox.margin>
+                                    <Insets right="14.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnPreviousStep" disable="true" mnemonicParsing="false" onAction="#previousStep" prefHeight="80.0" prefWidth="140.0" text="&lt;&lt;">
+                                 <HBox.margin>
+                                    <Insets right="14.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStart" disable="true" mnemonicParsing="false" onAction="#onToggleStateClick" prefHeight="80.0" prefWidth="140.0" text="START">
+                                 <HBox.margin>
+                                    <Insets right="14.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Wingdings" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnNextStep" disable="true" mnemonicParsing="false" onAction="#nextStep" prefHeight="80.0" prefWidth="140.0" text="&gt;&gt;" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="48.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="14.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <fx:include fx:id="warehouse" source="Warehouse.fxml" />
+   </children>
+</AnchorPane>
